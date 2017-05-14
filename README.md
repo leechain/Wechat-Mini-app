@@ -25,7 +25,6 @@ requestAnimationFrame is not defined
         canvasId: "snakCanvas",
         actions: context.getActions()
       });
-
       requestAnimationFrame(animate);
     }
     
@@ -34,10 +33,8 @@ requestAnimationFrame is not defined
         canvasId: "snakCanvas",
         actions: context.getActions()
       });
-
       ani(animate, 500);
     }
-
     function ani(callback) {
       setTimeout(callback, 1000 / 60);
     }
