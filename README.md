@@ -40,6 +40,7 @@ requestAnimationFrame is not defined
     
     function ani(callback) {
       setTimeout(callback, 1000 / 60);
-    }
+      }
+    
     
 通过构造一个函数ani来实现requestAnimationFrame的功能，再调用自己构造的函数，解决了这个bug。
