@@ -21,6 +21,7 @@ requestAnimationFrame is not defined
 微信小程序不支持requestAnimationFrame，所以部分性能的优化做不了，原因未知。
 
 然后就把requestAnimationFrame相关代码：
+
      wx.drawCanvas({
         canvasId: "snakCanvas",
         actions: context.getActions()
@@ -30,6 +31,7 @@ requestAnimationFrame is not defined
     
     
 替换成了如下代码：
+
     wx.drawCanvas({
         canvasId: "snakCanvas",
         actions: context.getActions()
