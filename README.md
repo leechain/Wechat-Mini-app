@@ -25,8 +25,9 @@ requestAnimationFrame is not defined
         canvasId: "snakCanvas",
         actions: context.getActions()
       });
+      
       requestAnimationFrame(animate);
-    }
+    
     
 替换成了如下代码：
     wx.drawCanvas({
@@ -34,8 +35,9 @@ requestAnimationFrame is not defined
         actions: context.getActions()
       });
       ani(animate, 500);
-    }
+    
     function ani(callback) {
       setTimeout(callback, 1000 / 60);
     }
+    
 通过构造一个函数ani来实现requestAnimationFrame的功能，再调用自己构造的函数，解决了这个bug。
