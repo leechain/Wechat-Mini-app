@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/bb/bb",
+    "pages/douban/douban"
+  ],
+  "tabBar":{
+    "borderStyle": "white",
+    "color":"rgb(169,183,183)",
+    "selectedColor":"rgb(86,171,228)",
+    "list": [
+    {
+        "text": "贝贝",
+        "pagePath": "pages/bb/bb",
+        "iconPath": "images/store.png",
+        "selectedIconPath": "images/store-selected.png"
+    },
+    {
+        "text": "豆瓣",
+        "pagePath": "pages/douban/douban",
+        "iconPath": "images/store.png",
+        "selectedIconPath": "images/store-selected.png"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "TinyMonit",
+    "navigationBarTextStyle":"black"
+  }
+}
